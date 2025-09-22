@@ -1,0 +1,61 @@
+/* Minimal robust layout CSS to guarantee sidebar + main column */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background:#f6f8fb; color:#111; }
+
+.app { display: flex; min-height: 100vh; align-items: flex-start; }
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  min-width: 200px;
+  background: linear-gradient(180deg,#667eea 0%,#764ba2 100%);
+  color: #fff;
+  padding: 22px;
+  display:flex;
+  flex-direction: column;
+  gap: 14px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.logo { font-weight: 700; font-size: 1.1rem; margin-bottom: 6px; }
+.nav-item {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .15s, transform .12s;
+}
+.nav-item:hover { background: rgba(255,255,255,0.06); transform: translateX(6px); }
+.nav-item.active { background: rgba(255,255,255,0.12); }
+
+/* Main */
+.main { flex: 1; padding: 28px; max-width: 900px; margin: 0 auto; width: 100%; }
+header h1 { font-size: 28px; margin-bottom: 14px; }
+
+/* Cards */
+.card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 12px 30px rgba(15,23,36,0.06); margin-bottom: 18px; }
+
+/* File drop */
+.file-drop {
+  display:flex; justify-content:center; align-items:center; cursor:pointer;
+  border: 2px dashed #d8d8ff; padding: 26px; border-radius: 10px; background:#fff;
+}
+.file-drop input[type="file"] { display: none; }
+
+/* Buttons */
+.actions { display:flex; gap:12px; margin-top:12px; }
+.btn { padding:10px 16px; border-radius:10px; font-weight:700; border:none; cursor:pointer; }
+.btn.primary { background: linear-gradient(135deg,#6b7bff,#8f5de8); color:#fff; }
+.btn.secondary { background:#eef2ff; color:#111; border: 1px solid #e6e9ff; }
+.btn:disabled { opacity:0.6; cursor:not-allowed; }
+
+/* Response */
+.response-box { margin-top:12px; padding:12px; background:#fbfbff; border-left:4px solid #667eea; border-radius:8px; }
+
+@media (max-width: 860px) {
+  .sidebar { display:none; } /* hide sidebar on small screens */
+  .main { padding: 16px; }
+}

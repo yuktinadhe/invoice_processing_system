@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice OCR Portal</title>
+
+  <!-- Link CSS via FastAPI url_for -->
+  <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">📑 InvoiceLab</h2>
+      <nav>
+        <a href="#" class="nav-item active" data-target="upload">⬆️ Upload</a>
+        <a href="#" class="nav-item" data-target="history">📂 History</a>
+        <a href="#" class="nav-item" data-target="settings">⚙️ Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <header>
+        <h1 id="pageTitle">Upload Invoice</h1>
+      </header>
+
+      <!-- Upload Section -->
+      <section id="upload" class="section">
+        <div class="card">
+          <h2>📂 Upload Your PDF</h2>
+          <form id="uploadForm">
+            <label class="file-drop">
+              <input type="file" id="pdfFile" accept="application/pdf" required>
+              <span>Click or drag & drop a PDF here</span>
+            </label>
+            <div class="actions">
+              <button type="submit" class="btn primary">Upload</button>
+              <button id="download" type="button" class="btn secondary" disabled>📥 Download</button>
+            </div>
+          </form>
+          <div id="response" class="response-box"></div>
+        </div>
+      </section>
+
+      <!-- History Section -->
+      <section id="history" class="section hidden">
+        <div class="card">
+          <h2>📂 Upload History</h2>
+          <p>No uploaded invoices yet.</p>
+        </div>
+      </section>
+
+      <!-- Settings Section -->
+      <section id="settings" class="section hidden">
+        <div class="card">
+          <h2>⚙️ Settings</h2>
+          <p>Configuration options coming soon.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Link JS via FastAPI url_for -->
+  <script src="{{ url_for('static', path='js/script.js') }}"></script>
+</body>
+</html>
