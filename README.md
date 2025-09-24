@@ -1,11 +1,11 @@
-# 📑 Invoice Processing with OCR + RAG
+# Invoice Processing with OCR + RAG
 
 A **FastAPI + OCR + RAG pipeline** project that lets you upload invoices (PDF), extract fields using OCR + NLP, and export the results to **Excel**.  
 Built with **FastAPI**, **pdf2image**, **Tesseract**, **RAG pipeline**, and a **modern frontend** (HTML/CSS/JS).
 
 ---
 
-## 🚀 Features
+## Features
 
 - 📂 Upload PDF invoices (drag & drop or click)
 - 🔍 Extract key fields from invoices using **OCR + NLP + RAG**
@@ -16,7 +16,7 @@ Built with **FastAPI**, **pdf2image**, **Tesseract**, **RAG pipeline**, and a **
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend:** [FastAPI](https://fastapi.tiangolo.com/), Uvicorn  
 - **OCR:** [pdf2image](https://pypi.org/project/pdf2image/), [Tesseract](https://github.com/tesseract-ocr/tesseract), Poppler  
@@ -26,7 +26,7 @@ Built with **FastAPI**, **pdf2image**, **Tesseract**, **RAG pipeline**, and a **
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 invoice_mvp/
@@ -56,25 +56,25 @@ invoice_mvp/
 └── tests/                 # Unit tests
 ```
 
-## 🖼️ Demo Screenshot
+## Demo Screenshot
 <img width="1918" height="913" alt="image" src="https://github.com/user-attachments/assets/443df4be-0b5f-4b14-a9f7-7ea05f38c169" />
 
 
-## 📊 Usage
+## Usage
 
 - Go to Upload Invoice → Upload or drag a PDF.
 - Fields will be extracted and shown on screen.
 - Download results as Excel.
 - View past uploads in History tab.
 
-## ✅ Example Workflow
+## Example Workflow
 
 - Upload invoice1.pdf
 - Extracted fields → Vendor, Date, Amount
 - Download invoice1.xlsx
 - Appears in History with timestamp and download link
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Add authentication (user-based history)
 - Support multiple file uploads
