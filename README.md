@@ -28,12 +28,12 @@ Built with **FastAPI**, **pdf2image**, **Tesseract**, **RAG pipeline**, and a **
 
 ## 📂 Project Structure
 
-invoice_mvp/
+- invoice_mvp/
 │── app.py # FastAPI app (routes, endpoints)
 │── requirements.txt # Dependencies
 │── history.json # Upload history (auto-created)
 │
-├── templates/
+- ├── templates/
 │ └── index.html # Frontend HTML (Jinja2 template)
 │
 ├── static/
@@ -42,38 +42,38 @@ invoice_mvp/
 │ └── js/
 │ └── script.js # Frontend interactivity
 │
-├── services/
+- ├── services/
 │ └── rag_pipeline.py # RAG pipeline logic
 │
-├── utils/
+- ├── utils/
 │ ├── ocr_utils.py # OCR & PDF → Image helpers
 │ ├── nlp_utils.py # NLP helpers
 │ └── file_utils.py # File utilities
 │
-├── data/ # Uploaded PDFs
-├── exports/ # Processed Excel files
-└── tests/ # Unit tests
+- ├── data/ # Uploaded PDFs
+- ├── exports/ # Processed Excel files
+- └── tests/ # Unit tests
 
 ## 📊 Usage
 
-Go to Upload Invoice → Upload or drag a PDF.
-Fields will be extracted and shown on screen.
-Download results as Excel.
-View past uploads in History tab.
+- Go to Upload Invoice → Upload or drag a PDF.
+- Fields will be extracted and shown on screen.
+- Download results as Excel.
+- View past uploads in History tab.
 
 ## ✅ Example Workflow
 
-Upload invoice1.pdf
-Extracted fields → Vendor, Date, Amount
-Download invoice1.xlsx
-Appears in History with timestamp and download link
+- Upload invoice1.pdf
+- Extracted fields → Vendor, Date, Amount
+- Download invoice1.xlsx
+- Appears in History with timestamp and download link
 
 ## 🔮 Future Improvements
 
-Add authentication (user-based history)
-Support multiple file uploads
-Enhance OCR accuracy with advanced preprocessing
-Cloud deployment (Azure / AWS)
+- Add authentication (user-based history)
+- Support multiple file uploads
+- Enhance OCR accuracy with advanced preprocessing
+- Cloud deployment (Azure / AWS)
 
 ## 👨‍💻 Author
 Developed by Yukti Nadhe
