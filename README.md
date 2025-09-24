@@ -28,8 +28,6 @@ Built with **FastAPI**, **pdf2image**, **Tesseract**, **RAG pipeline**, and a **
 
 ## 📂 Project Structure
 
-## 📂 Project Structure
-
 ```text
 invoice_mvp/
 │── app.py                # FastAPI app (routes, endpoints)
