@@ -28,12 +28,12 @@ Built with **FastAPI**, **pdf2image**, **Tesseract**, **RAG pipeline**, and a **
 
 ## 📂 Project Structure
 
-- invoice_mvp/
+invoice_mvp/
 │── app.py # FastAPI app (routes, endpoints)
 │── requirements.txt # Dependencies
 │── history.json # Upload history (auto-created)
 │
-- ├── templates/
+├── templates/
 │ └── index.html # Frontend HTML (Jinja2 template)
 │
 ├── static/
@@ -42,17 +42,17 @@ Built with **FastAPI**, **pdf2image**, **Tesseract**, **RAG pipeline**, and a **
 │ └── js/
 │ └── script.js # Frontend interactivity
 │
-- ├── services/
+├── services/
 │ └── rag_pipeline.py # RAG pipeline logic
 │
-- ├── utils/
+├── utils/
 │ ├── ocr_utils.py # OCR & PDF → Image helpers
 │ ├── nlp_utils.py # NLP helpers
 │ └── file_utils.py # File utilities
 │
-- ├── data/ # Uploaded PDFs
-- ├── exports/ # Processed Excel files
-- └── tests/ # Unit tests
+├── data/ # Uploaded PDFs
+├── exports/ # Processed Excel files
+└── tests/ # Unit tests
 
 ## 📊 Usage
 
