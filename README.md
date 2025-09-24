@@ -58,6 +58,10 @@ invoice_mvp/
 └── tests/                 # Unit tests
 ```
 
+## 🖼️ Demo Screenshot
+<img width="1918" height="913" alt="image" src="https://github.com/user-attachments/assets/443df4be-0b5f-4b14-a9f7-7ea05f38c169" />
+
+
 ## 📊 Usage
 
 - Go to Upload Invoice → Upload or drag a PDF.
